@@ -17,9 +17,9 @@ public class Employee {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long employeeId;
-
-    private String employeeName;  
-    //private String employeePersonalPhoneNumber;
+    private String employeeFirstName;  
+    private String employeeLastName;  
+    private String employeeWorkPhoneNumber;
     private String employeeRole;
 
     @EqualsAndHashCode.Exclude

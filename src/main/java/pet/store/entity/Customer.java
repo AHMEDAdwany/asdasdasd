@@ -15,9 +15,9 @@ public class Customer {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long customerId;
-    
-    
-    private String customerName;
+    private String customerFristName;
+    private String customerLastName;
+    @Column(unique = true)
     private String customerEmail;
 
     @EqualsAndHashCode.Exclude
