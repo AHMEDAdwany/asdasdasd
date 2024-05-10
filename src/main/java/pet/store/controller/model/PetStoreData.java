@@ -58,7 +58,7 @@ public class PetStoreData {
 	    	private Long employeeId;
 		    private String employeeFirstName;  
 		    private String employeeLastName;  
-		    private String employeeWorkPhoneNumber;
+		    private String employeeWorkPhone;
 		    private String employeeRole;
 		
 	    
@@ -66,7 +66,7 @@ public class PetStoreData {
 	    	employeeId = employee.getEmployeeId();
 	    	employeeFirstName = employee.getEmployeeFirstName();
 	    	employeeLastName = employee.getEmployeeLastName();
-	    	employeeWorkPhoneNumber = employee.getEmployeeWorkPhoneNumber() ;
+	    	employeeWorkPhone = employee.getEmployeeWorkPhone() ;
 	    	employeeRole = employee.getEmployeeRole();
 	    			
 	    			
@@ -79,14 +79,14 @@ public class PetStoreData {
 	    static class PetStoreCustomer {
 	    
 	    private Long customerId;
-	    private String customerFristName;
+	    private String customerFirstName;
 	    private String customerLastName;
 	    private String customerEmail;
 	    
 	    
 	  public PetStoreCustomer (Customer customer){
-	    customerId = customer.getCustomerId();
-	    		customerFristName = customer.getCustomerFristName();
+		  		customerId = customer.getCustomerId();
+	    		customerFirstName = customer.getCustomerFirstName();
 	    		customerLastName = customer.getCustomerLastName();
 	    		customerEmail = customer.getCustomerEmail();
 	    	
